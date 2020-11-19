@@ -48,7 +48,7 @@ public class ObjectDetectionPikachu {
     static SingleShotDetectionTranslator.Builder builder = SingleShotDetectionTranslator.builder()
             .addTransform(new ToTensor())
             .optSynset(Collections.singletonList("pikachu"))
-            .optThreshold(0.3f);
+            .optThreshold(0.8f);
 
     static SingleShotDetectionTranslator translator = new SingleShotDetectionTranslator(builder){
 
